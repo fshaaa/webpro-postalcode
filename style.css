@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+section {
+  min-height: 100vh;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+form {
+  padding: 25px;
+  width: 35%;
+  height: 300px;
+  border: solid grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: center;
+  animation: show 2.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+form select,
+input {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  width: 90%;
+  height: 30px;
+  border-radius: 6px;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: -15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form h1 {
+  margin-top: -50px;
+}
+
+h2{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+p{
+  font-size: 14px;
+}
+
+.result {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  border: solid black;
+  border-radius: 8px;
+  box-shadow: 11px 10px 20px -9px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 11px 10px 20px -9px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 11px 10px 20px -9px rgba(0, 0, 0, 0.7);
+  animation: show 2.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes show {
+
+  0%{
+      opacity: 0;
+      visibility: hidden;
+  }
+  100%{
+      opacity: 1;
+      visibility: visible;
+  }
+}
